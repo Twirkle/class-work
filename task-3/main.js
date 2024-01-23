@@ -1,3 +1,6 @@
-const students  =  ['Андрей','Иван','Павел'];
-students [5] = 'Никита';
-console.log (students[5]);
+// const students  =  ['Андрей','Иван','Павел'];
+// console.log (students);
+// students [1] = 'Никита';
+// console.log (students);
+const colledge = [['Tom','Sam','Vladimir'],['Dasha','Oleg','Ivan']];
+console.log (colledge);
