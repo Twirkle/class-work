@@ -63,16 +63,38 @@
 
 // 4 zadanie
 
-class ArraySum {
-    constructor(array) {
-      this.array = array;
+// class ArraySum {
+//     constructor(array) {
+//       this.array = array;
+//     }
+  
+//     calculateSum() {
+//       return this.array.reduce((acc, curr) => acc + curr, 0);
+//     }
+//   }
+  
+//   const numbers = [1, 2, 3, 4, 5];
+//   const arraySum = new ArraySum(numbers);
+//   console.log(arraySum.calculateSum()); 
+
+
+// 5 zadanie
+
+class dailinet  {
+    constructor(numberArr) {
+      this.numberArr = numberArr;
     }
   
-    calculateSum() {
-      return this.array.reduce((acc, curr) => acc + curr, 0);
+    netilida() {
+      for (let i = 0; i < this.numberArr.length; i++) {
+        if (this.numberArr[i] < 0) {
+          return "Да";
+        }
+      }
+      return "Нет";
     }
   }
   
-  const numbers = [1, 2, 3, 4, 5];
-  const arraySum = new ArraySum(numbers);
-  console.log(arraySum.calculateSum()); 
+  const numbers = [1, 2, -3, 4, 5];
+  const checkNumbers = new dailinet(numbers);
+  console.log(checkNumbers.netilida()); 
