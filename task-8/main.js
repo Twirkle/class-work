@@ -80,21 +80,49 @@
 
 // 5 zadanie
 
-class dailinet  {
-    constructor(numberArr) {
-      this.numberArr = numberArr;
+// class dailinet  {
+//     constructor(numberArr) {
+//       this.numberArr = numberArr;
+//     }
+  
+//     netilida() {
+//       for (let i = 0; i < this.numberArr.length; i++) {
+//         if (this.numberArr[i] < 0) {
+//           return "Да";
+//         }
+//       }
+//       return "Нет";
+//     }
+//   }
+  
+//   const numbers = [1, 2, -3, 4, 5];
+//   const checkNumbers = new dailinet(numbers);
+//   console.log(checkNumbers.netilida()); 
+
+// 6 zadanie
+
+
+class dailida {
+    constructor(arr) {
+      this.arr = arr;
     }
   
-    netilida() {
-      for (let i = 0; i < this.numberArr.length; i++) {
-        if (this.numberArr[i] < 0) {
-          return "Да";
+    netilinet() {
+      for (let i = 0; i < this.arr.length; i++) {
+        if (this.arr[i] % 3 === 0) {
+          return "da";
         }
       }
-      return "Нет";
+      return "net";
     }
   }
   
-  const numbers = [1, 2, -3, 4, 5];
-  const checkNumbers = new dailinet(numbers);
-  console.log(checkNumbers.netilida()); 
+  const array1 = [1, 2, 3, 4, 5];
+  const array2 = [2, 4, 6, 8, 10];
+  
+  
+  const check1 = new dailida(array1);
+  console.log(check1.netilinet()); 
+  
+  const check2 = new dailida(array2);
+  console.log(check2.netilinet()); 
