@@ -102,27 +102,47 @@
 // 6 zadanie
 
 
-class dailida {
-    constructor(arr) {
-      this.arr = arr;
-    }
+// class dailida {
+//     constructor(arr) {
+//       this.arr = arr;
+//     }
   
-    netilinet() {
-      for (let i = 0; i < this.arr.length; i++) {
-        if (this.arr[i] % 3 === 0) {
-          return "da";
+//     netilinet() {
+//       for (let i = 0; i < this.arr.length; i++) {
+//         if (this.arr[i] % 3 === 0) {
+//           return "da";
+//         }
+//       }
+//       return "net";
+//     }
+//   }
+  
+//   const array1 = [1, 2, 3, 4, 5];
+//   const array2 = [2, 4, 6, 8, 10];
+  
+  
+//   const check1 = new dailida(array1);
+//   console.log(check1.netilinet()); 
+  
+//   const check2 = new dailida(array2);
+//   console.log(check2.netilinet()); 
+
+
+
+
+// 2 zadanie 
+
+
+class pomogite {
+
+    pechatayu() {
+        for (let i = 1; i <= 100; i++) {
+            if (i % 3 === 0 || i % 5 === 0 || i % 7 === 0) {
+              console.log(i);
+            }
+          }
         }
-      }
-      return "net";
     }
-  }
   
-  const array1 = [1, 2, 3, 4, 5];
-  const array2 = [2, 4, 6, 8, 10];
-  
-  
-  const check1 = new dailida(array1);
-  console.log(check1.netilinet()); 
-  
-  const check2 = new dailida(array2);
-  console.log(check2.netilinet()); 
+  const numbers = new pomogite();
+  numbers.pechatayu();
